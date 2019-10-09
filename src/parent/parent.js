@@ -13,14 +13,13 @@ class Parent extends React.Component {
 
     state = {
         data: "message sent to child",
-        inputValue: "blank"
+        inputValue: "Test"
     }
 
     render () {
         return (
             <>
                 <h2>Parent</h2>
-                <input value={this.state.inputValue}></input>
                 <Child1 inputValue={this.state.inputValue} />
             </>
         )
